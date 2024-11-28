@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 30%;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product-title {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .product-price {
+            font-size: 18px;
+            color: #555;
+            margin: 10px 0;
+        }
+        .product-description {
+            font-size: 14px;
+            color: #777;
+        }
+        .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+    </header>
+
+    <div class="container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="product1.jpg" alt="Product 1">
+            </div>
+            <h2 class="product-title">Product 1</h2>
+            <p class="product-price">$25.00</p>
+            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor erat eget.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="product2.jpg" alt="Product 2">
+            </div>
+            <h2 class="product-title">Product 2</h2>
+            <p class="product-price">$45.00</p>
+            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor erat eget.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="product3.jpg" alt="Product 3">
+            </div>
+            <h2 class="product-title">Product 3</h2>
+            <p class="product-price">$35.00</p>
+            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor erat eget.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+    </div>
+</body>
+</html>
